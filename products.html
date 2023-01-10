@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>All Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="C:\Users\Duane\Downloads\navbar test\style2.css">
+</head>
+
+
+<div class="main-navbar shadow-sm sticky-top">
+    <div class="top-navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                    <h5 class="brand-name">FGH</h5>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <form role="search">
+                        <div class="input-group">
+                            <input type="search" placeholder="Search" class="form-control" />
+                            <button class="btn bg-white" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <ul class="nav justify-content-end">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-shopping-cart"></i> Cart (0)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fa fa-heart"></i> Orders (0)
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user"></i> Island Seabird Seychelles 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href=""><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i> My Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> My Cart</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+                FGH
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">All Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Featured Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Custom Quotations</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+
+<div class="container">
+    <div class="bg-transparent  d-flex align-items-center justify-content-between" id="header"> 
+        <!-- <button
+            class="btn btn-hide text-uppercase" type="button" data-toggle="collapse" data-target="#filterbar"
+            aria-expanded="false" aria-controls="filterbar" id="filter-btn" onclick="changeBtnTxt()">  -->
+            <!-- <span
+                class="fas fa-angle-left" id="filter-angle"></span> <span id="btn-txt">Hide filters</span> </button> -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-light pl-lg-0 pl-auto"> <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="chnageIcon()" id="icon"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav d-lg-flex align-items-lg-center">
+                    <li class="nav-item active"> <select name="sort" id="sort">
+                            <option value="" hidden selected>Sort by</option>
+                            <option value="price">Price</option>
+                            <option value="popularity">Popularity</option>
+                            <option value="rating">Rating</option>
+                        </select> </li>
+                    <li class="nav-item d-inline-flex align-items-center justify-content-between mb-lg-0 mb-3">
+                        <div class="d-inline-flex align-items-center mx-lg-2" id="select2">
+                            <div class="pl-2">Products:</div> <select name="pro" id="pro">
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
+                        </div>
+                        <div class="font-weight-bold mx-2 result">18 from 200</div>
+                    </li>
+                    <li class="nav-item d-lg-none d-inline-flex"> </li>
+                </ul>
+            </div>
+        </nav> -->
+        <!-- <div class="ml-auto mt-3 mr-2">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"> <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true"
+                                class="font-weight-bold">&lt;</span> <span class="sr-only">Previous</span> </a> </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">..</a></li>
+                    <li class="page-item"><a class="page-link" href="#">24</a></li>
+                    <li class="page-item"> <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true"
+                                class="font-weight-bold">&gt;</span> <span class="sr-only">Next</span> </a> </li>
+                </ul>
+            </nav>
+        </div> -->
+    </div>
+    <div id="content" class="my-5">
+        <div id="filterbar" class="collapse">
+            <div class="box border-bottom">
+                <div class="form-group text-center">
+                    <div class="btn-group" data-toggle="buttons"> <label class="btn btn-success form-check-label">
+                            <input class="form-check-input" type="radio"> Reset </label> <label
+                            class="btn btn-success form-check-label active"> <input class="form-check-input"
+                                type="radio" checked> Apply </label> </div>
+                </div>
+                <!-- <div> <label class="tick">New <input type="checkbox" checked="checked"> <span class="check"></span>
+                    </label> </div>
+                <div> <label class="tick">Sale <input type="checkbox"> <span class="check"></span> </label> </div> -->
+            </div>
+            <div class="box border-bottom">
+                <div class="box-label text-uppercase d-flex align-items-center">PRODUCTS <button class="btn ml-auto"
+                        type="button" data-toggle="collapse" data-target="#inner-box" aria-expanded="false"
+                        aria-controls="inner-box" id="out" onclick="outerFilter()"> <span class="fas fa-plus"></span>
+                    </button> </div>
+                <div id="inner-box" class="collapse mt-2 mr-1">
+                    <div class="my-1"> <label class="tick">Hooks <input type="checkbox" checked="checked"> <span
+                                class="check"></span> </label> </div>
+                    <div class="my-1"> <label class="tick">Lines <input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Lures <input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Nets <input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Weights <input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Swivels and Snaps <input type="checkbox" checked> <span
+                                class="check"></span> </label> </div>
+                    <div class="my-1"> <label class="tick">Reels <input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Rods <input type="checkbox" checked> <span
+                                class="check"></span> </label> </div>
+                    <div class="my-1"> <label class="tick">Knives <input type="checkbox" checked> <span
+                                class="check"></span> </label> </div>
+                    <div class="my-1"> <label class="tick">Other <input type="checkbox" checked> <span
+                                class="check"></span> </label> </div>
+                </div>
+            </div>
+            <div class="box border-bottom">
+                <div class="box-label text-uppercase d-flex align-items-center">TYPE <button class="btn ml-auto"
+                        type="button" data-toggle="collapse" data-target="#inner-box2" aria-expanded="false"
+                        aria-controls="inner-box2"><span class="fas fa-plus"></span></button> </div>
+                <div id="inner-box2" class="collapse mt-2 mr-1">
+                    <div class="my-1"> <label class="tick">Long-Line Fishing<input type="checkbox" checked="checked"> <span
+                                class="check"></span> </label> </div>
+                    <div class="my-1"> <label class="tick">Artisanal Fishing<input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Sport Fishing <input type="checkbox" checked> <span
+                                class="check"></span> </label> </div>
+                    <div class="my-1"> <label class="tick">Casual Fishing <input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                    <div class="my-1"> <label class="tick">Accessories<input type="checkbox" checked> <span class="check"></span>
+                        </label> </div>
+                </div>
+            </div>
+            <div class="box border-bottom">
+                <div class="box-label text-uppercase d-flex align-items-center">price <button class="btn ml-auto"
+                        type="button" data-toggle="collapse" data-target="#price" aria-expanded="false"
+                        aria-controls="price"><span class="fas fa-plus"></span></button> </div>
+                <div class="collapse" id="price">
+                    <div class="middle">
+                        <div class="multi-range-slider"> <input type="range" id="input-left" min="0" max="100"
+                                value="10"> <input type="range" id="input-right" min="0" max="100" value="50">
+                            <div class="slider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <div> <span id="amount-left" class="font-weight-bold"></span> SCR </div>
+                        <div> <span id="amount-right" class="font-weight-bold"></span> SCR </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-label text-uppercase d-flex align-items-center">size <button class="btn ml-auto"
+                        type="button" data-toggle="collapse" data-target="#size" aria-expanded="false"
+                        aria-controls="size"><span class="fas fa-plus"></span></button> </div>
+                <div id="size" class="collapse">
+                    <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> 
+                        <label
+                            class="btn btn-success form-check-label"> 
+                            <input class="form-check-input" type="checkbox">
+                            80 
+                        </label> 
+                        <label class="btn btn-success form-check-label">
+                             <input class="form-check-input"
+                                type="checkbox" checked> 92 
+                            </label>
+                                 <label class="btn btn-success form-check-label">
+                            <input class="form-check-input" type="checkbox" checked> 102 </label>
+                             <label
+                            class="btn btn-success form-check-label"> <input class="form-check-input" type="checkbox"
+                                checked> 104 
+                            </label>
+                                 <label class="btn btn-success form-check-label">
+                                     <input="form-check-input" type="checkbox" checked> 106 </label>
+                                      <label class="btn btn-success form-check-label"> 
+                                        <input class="form-check-input" type="checkbox"checked> 108 
+                                    </label> 
+                                </div>
+                </div>
+            </div>
+        </div>
+        <div id="products">
+            <div class="row mx-0">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card d-flex flex-column align-items-center">
+                        
+                        <div class="card-img"> <img
+                                src="https://m.media-amazon.com/images/I/81ImpC7bSLL._AC_SX679_.jpg"
+                                alt="" height="100" id="shirt"> </div>
+                        <!-- <div class="text-muted text-center mt-auto">Available Sizes</div> -->
+                        &nbsp;
+                        <div id="avail-size">
+                            <div class="product-name">
+                                <center>
+                                    Berkley Trilene Big Game Monofilament
+                                </center></div>
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox"> 10 </label> <label class="btn btn-success form-check-label">
+                                    <input class="form-check-input" type="checkbox" checked> 20 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 30 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 40 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 60 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 80 </label> </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            
+                                <div class="font-weight-bold">
+                                    <center>
+                                        SCR 85.50
+                                    </center>
+                                </div>
+
+                            <div class="d-flex align-items-center price">
+                                
+
+                                <button class="cta">
+                                    <span>Add to Cart</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                      <path d="M1,5 L11,5"></path>
+                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-md-0 pt-3">
+                    <div class="card d-flex flex-column align-items-center">
+                        
+                        <div class="card-img"> <img
+                                src="https://m.media-amazon.com/images/I/71gE0DLuQPL._AC_SX679_.jpg"
+                                alt="" height="100" id="shirt"> </div>
+                        <!-- <div class="text-muted text-center mt-auto">Available Sizes</div> -->
+                        &nbsp;
+                        <div id="avail-size">
+                            <div class="product-name">
+                                <center>
+                                    Gamakatsu Circle Offset Point Octopus Hook
+                                </center></div>
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox"> 05 </label> <label class="btn btn-success form-check-label">
+                                    <input class="form-check-input" type="checkbox" checked> 10 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 20 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 25 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 50 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 100 </label> </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            
+                                <div class="font-weight-bold">
+                                    <center>
+                                        SCR 85.50
+                                    </center>
+                                </div>
+
+                            <div class="d-flex align-items-center price">
+                                
+
+                                <button class="cta">
+                                    <span>Add to Cart</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                      <path d="M1,5 L11,5"></path>
+                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-lg-0 pt-md-4 pt-3">
+                    <div class="card d-flex flex-column align-items-center">
+                        
+                        <div class="card-img"> <img
+                                src="https://m.media-amazon.com/images/I/71yEUaXqoTL._AC_UL320_.jpg"
+                                alt="" height="100" id="shirt"> </div>
+                        <!-- <div class="text-muted text-center mt-auto">Available Sizes</div> -->
+                        &nbsp;
+                        <div id="avail-size">
+                            <div class="product-name">
+                                <center>
+                                    Mustad Classic 39944 Black Fishing Hooks
+                                </center></div>
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox"> 05 </label> <label class="btn btn-success form-check-label">
+                                    <input class="form-check-input" type="checkbox" checked> 10 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 20 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 25 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 50 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 100 </label> </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            
+                                <div class="font-weight-bold">
+                                    <center>
+                                        SCR 85.50
+                                    </center>
+                                </div>
+
+                            <div class="d-flex align-items-center price">
+                                
+
+                                <button class="cta">
+                                    <span>Add to Cart</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                      <path d="M1,5 L11,5"></path>
+                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-md-4 pt-3">
+                    <div class="card d-flex flex-column align-items-center">
+                        
+                        <div class="card-img"> <img
+                                src="https://m.media-amazon.com/images/I/61VU9fzuZbL._AC_SX679_.jpg"
+                                alt="" height="100" id="shirt"> </div>
+                        <!-- <div class="text-muted text-center mt-auto">Available Sizes</div> -->
+                        &nbsp;
+                        <div id="avail-size">
+                            <div class="product-name">
+                                <center>
+                                    Rapala X-Rap Saltwater Fishing Lure Assorted
+
+                                </center></div>
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox"> 05 </label> <label class="btn btn-success form-check-label">
+                                    <input class="form-check-input" type="checkbox" checked> 10 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 20 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 25 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 50 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 100 </label> </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            
+                                <div class="font-weight-bold">
+                                    <center>
+                                        SCR 85.50
+                                    </center>
+                                </div>
+
+                            <div class="d-flex align-items-center price">
+                                
+
+                                <button class="cta">
+                                    <span>Add to Cart</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                      <path d="M1,5 L11,5"></path>
+                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-md-4 pt-3">
+                    <div class="card d-flex flex-column align-items-center">
+                        
+                        <div class="card-img"> <img
+                                src="https://m.media-amazon.com/images/I/51WGEP37OhL._AC_SX679_.jpg"
+                                alt="" height="100" id="shirt"> </div>
+                        <!-- <div class="text-muted text-center mt-auto">Available Sizes</div> -->
+                        &nbsp;
+                        <div id="avail-size">
+                            <div class="product-name">
+                                <center>
+                                    Billfisher DSS200-3PK Double Snap Fishing Swivels
+
+                                </center></div>
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox"> 05 </label> <label class="btn btn-success form-check-label">
+                                    <input class="form-check-input" type="checkbox" checked> 10 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 20 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 25 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 50 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 100 </label> </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            
+                                <div class="font-weight-bold">
+                                    <center>
+                                        SCR 85.50
+                                    </center>
+                                </div>
+
+                            <div class="d-flex align-items-center price">
+                                
+
+                                <button class="cta">
+                                    <span>Add to Cart</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                      <path d="M1,5 L11,5"></path>
+                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-md-4 pt-3">
+                    <div class="card d-flex flex-column align-items-center">
+                        
+                        <div class="card-img"> <img
+                                src="https://m.media-amazon.com/images/I/81z3QHfEIhL._AC_SX679_.jpg"
+                                alt="" height="100" id="shirt"> </div>
+                        <!-- <div class="text-muted text-center mt-auto">Available Sizes</div> -->
+                        &nbsp;
+                        <div id="avail-size">
+                            <div class="product-name">
+                                <center>
+                                    5 Colors 210M 4 Strand PE Braided Fishing Lines 
+
+                                </center></div>
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons"> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox"> 05 </label> <label class="btn btn-success form-check-label">
+                                    <input class="form-check-input" type="checkbox" checked> 10 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 20 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 25 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 50 </label> <label
+                                    class="btn btn-success form-check-label"> <input class="form-check-input"
+                                        type="checkbox" checked> 100 </label> </div>
+                        </div>
+
+                        <div class="card-body pt-0">
+                            
+                                <div class="font-weight-bold">
+                                    <center>
+                                        SCR 85.50
+                                    </center>
+                                </div>
+
+                            <div class="d-flex align-items-center price">
+                                
+
+                                <button class="cta">
+                                    <span>Add to Cart</span>
+                                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                      <path d="M1,5 L11,5"></path>
+                                      <polyline points="8 1 12 5 8 9"></polyline>
+                                    </svg>
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT INLINE -->
+<script>
+    // For Filters
+document.addEventListener("DOMContentLoaded", function() {
+var filterBtn = document.getElementById('filter-btn');
+var btnTxt = document.getElementById('btn-txt');
+var filterAngle = document.getElementById('filter-angle');
+
+$('#filterbar').collapse(false);
+var count = 0, count2 = 0;
+function changeBtnTxt() {
+$('#filterbar').collapse(true);
+count++;
+if (count % 2 != 0) {
+filterAngle.classList.add("fa-angle-right");
+btnTxt.innerText = "show filters"
+filterBtn.style.backgroundColor = "#36a31b";
+}
+else {
+filterAngle.classList.remove("fa-angle-right")
+btnTxt.innerText = "hide filters"
+filterBtn.style.backgroundColor = "#ff935d";
+}
+
+}
+
+// For Applying Filters
+$('#inner-box').collapse(false);
+$('#inner-box2').collapse(false);
+
+// For changing NavBar-Toggler-Icon
+var icon = document.getElementById('icon');
+
+function chnageIcon() {
+count2++;
+if (count2 % 2 != 0) {
+icon.innerText = "";
+icon.innerHTML = '<span class="far fa-times-circle" style="width:100%"></span>';
+icon.style.paddingTop = "5px";
+icon.style.paddingBottom = "5px";
+icon.style.fontSize = "1.8rem";
+
+
+}
+else {
+icon.innerText = "";
+icon.innerHTML = '<span class="navbar-toggler-icon"></span>';
+icon.style.paddingTop = "5px";
+icon.style.paddingBottom = "5px";
+icon.style.fontSize = "1.2rem";
+}
+}
+
+// Showing tooltip for AVAILABLE COLORS
+$(function () {
+$('[data-tooltip="tooltip"]').tooltip()
+})
+
+// For Range Sliders
+var inputLeft = document.getElementById("input-left");
+var inputRight = document.getElementById("input-right");
+
+var thumbLeft = document.querySelector(".slider > .thumb.left");
+var thumbRight = document.querySelector(".slider > .thumb.right");
+var range = document.querySelector(".slider > .range");
+
+var amountLeft = document.getElementById('amount-left')
+var amountRight = document.getElementById('amount-right')
+
+function setLeftValue() {
+var _this = inputLeft,
+min = parseInt(_this.min),
+max = parseInt(_this.max);
+
+_this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+var percent = ((_this.value - min) / (max - min)) * 100;
+
+thumbLeft.style.left = percent + "%";
+range.style.left = percent + "%";
+amountLeft.innerText = parseInt(percent * 100);
+}
+setLeftValue();
+
+function setRightValue() {
+var _this = inputRight,
+min = parseInt(_this.min),
+max = parseInt(_this.max);
+
+_this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+var percent = ((_this.value - min) / (max - min)) * 100;
+
+amountRight.innerText = parseInt(percent * 100);
+thumbRight.style.right = (100 - percent) + "%";
+range.style.right = (100 - percent) + "%";
+}
+setRightValue();
+
+inputLeft.addEventListener("input", setLeftValue);
+inputRight.addEventListener("input", setRightValue);
+
+inputLeft.addEventListener("mouseover", function () {
+thumbLeft.classList.add("hover");
+});
+inputLeft.addEventListener("mouseout", function () {
+thumbLeft.classList.remove("hover");
+});
+inputLeft.addEventListener("mousedown", function () {
+thumbLeft.classList.add("active");
+});
+inputLeft.addEventListener("mouseup", function () {
+thumbLeft.classList.remove("active");
+});
+
+inputRight.addEventListener("mouseover", function () {
+thumbRight.classList.add("hover");
+});
+inputRight.addEventListener("mouseout", function () {
+thumbRight.classList.remove("hover");
+});
+inputRight.addEventListener("mousedown", function () {
+thumbRight.classList.add("active");
+});
+inputRight.addEventListener("mouseup", function () {
+thumbRight.classList.remove("active");
+});
+});
+</script>
+
+
+
+
+<!-- INLINE CSS -->
+<style>
+    .cta {
+ position: relative;
+ margin: auto;
+ padding: 0px 20px;
+ transition: all 0.2s ease;
+ border: none;
+ background: none;
+}
+
+.cta:before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ border-radius: 50px;
+ background: #b1dae7;
+ width: 25px;
+ height: 25px;
+ transition: all 0.3s ease;
+}
+
+.cta span {
+ position: relative;
+ font-family: "Ubuntu", sans-serif;
+ font-size: 12px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ color: #234567;
+}
+
+.cta svg {
+ position: relative;
+ top: 0;
+ margin-left: 10px;
+ fill: none;
+ stroke-linecap: round;
+ stroke-linejoin: round;
+ stroke: #234567;
+ stroke-width: 2;
+ transform: translateX(-5px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+ width: 100%;
+ background: #b1dae7;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active {
+ transform: scale(0.95);
+}
+</style>
